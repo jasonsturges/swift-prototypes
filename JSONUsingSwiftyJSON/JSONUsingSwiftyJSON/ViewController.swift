@@ -7,12 +7,24 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let path = NSBundle.mainBundle().pathForResource("data", ofType: "json")
+        let data = NSData(contentsOfFile: path!)
+        let json = JSON(data: data!)
+        
+        print("Type: \(json["type"])")
+        print("Name: \(json["properties"]["name"])")
+        print("Coordinates: ")
+        
+        for (key, subjson) in json["geometry"]["coordinates"] {
+            print("   \(key): \(subjson)")
+        }
     }
 
     override func didReceiveMemoryWarning() {

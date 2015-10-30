@@ -46,9 +46,9 @@
 			isa = PBXGroup;
 			children = (
 				817BD24E1BE349FE00ECB8E2 /* README.md */,
-				817BD24B1BE344AC00ECB8E2 /* SwiftyJSON.framework */,
 				817BD2481BE3441A00ECB8E2 /* Cartfile */,
 				817BD2351BE343B700ECB8E2 /* JSONUsingSwiftyJSON */,
+				817BD24F1BE34AD800ECB8E2 /* Frameworks */,
 				817BD2341BE343B700ECB8E2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,6 +73,14 @@
 				817BD2421BE343B700ECB8E2 /* Info.plist */,
 			);
 			path = JSONUsingSwiftyJSON;
+			sourceTree = "<group>";
+		};
+		817BD24F1BE34AD800ECB8E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				817BD24B1BE344AC00ECB8E2 /* SwiftyJSON.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

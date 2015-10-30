@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <catalog>
+        <book id="1">
+            <author>Bob</author>
+            <genre>Fiction</genre>
+        </book>
+        <book id="123">
+            <author>John</author>
+            <genre>Non-fiction</genre>
+        </book>
+        <book id="456">
+            <author>Mark</author>
+            <genre>Technical</genre>
+        </book>
+    </catalog>
+</root>

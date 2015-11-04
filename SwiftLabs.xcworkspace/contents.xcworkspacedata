@@ -20,6 +20,9 @@
       location = "group:SpriteKitDrawSprite/SpriteKitDrawSprite.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:SpriteKitSceneTransition/SpriteKitSceneTransition.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:XMLUsingSWXMLHash/XMLUsingSWXMLHash.xcodeproj">
    </FileRef>
 </Workspace>

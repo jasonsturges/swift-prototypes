@@ -14,6 +14,9 @@
       location = "group:JSONUsingSwiftyJSON/JSONUsingSwiftyJSON.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:SceneKitPrimitiveScene/SceneKitPrimitiveScene.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:SpriteKitAnimateSprite/SpriteKitAnimateSprite.xcodeproj">
    </FileRef>
    <FileRef

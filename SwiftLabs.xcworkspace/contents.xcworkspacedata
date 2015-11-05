@@ -17,6 +17,9 @@
       location = "group:SceneKitPrimitiveScene/SceneKitPrimitiveScene.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:SceneKitSkybox/SceneKitSkybox.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:SpriteKitAnimateSprite/SpriteKitAnimateSprite.xcodeproj">
    </FileRef>
    <FileRef

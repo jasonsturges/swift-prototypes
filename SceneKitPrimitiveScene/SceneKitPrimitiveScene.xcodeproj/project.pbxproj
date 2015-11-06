@@ -14,6 +14,7 @@
 		1E3C598E1BEB1F6F00833D7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E3C598C1BEB1F6F00833D7D /* LaunchScreen.storyboard */; };
 		1E3C59961BEB1FBA00833D7D /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E3C59951BEB1FBA00833D7D /* SceneKit.framework */; };
 		1E3C59981BEB202C00833D7D /* PrimitiveScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3C59971BEB202C00833D7D /* PrimitiveScene.swift */; };
+		1E770DED1BEC74010024C184 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 1E770DEC1BEC74010024C184 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		1E3C598F1BEB1F6F00833D7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E3C59951BEB1FBA00833D7D /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
 		1E3C59971BEB202C00833D7D /* PrimitiveScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimitiveScene.swift; sourceTree = "<group>"; };
+		1E770DEC1BEC74010024C184 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 		1E3C59751BEB1F6F00833D7D = {
 			isa = PBXGroup;
 			children = (
+				1E770DEC1BEC74010024C184 /* README.md */,
 				1E3C59801BEB1F6F00833D7D /* SceneKitPrimitiveScene */,
 				1E3C59991BEB273000833D7D /* Frameworks */,
 				1E3C597F1BEB1F6F00833D7D /* Products */,
@@ -153,6 +156,7 @@
 			files = (
 				1E3C59981BEB202C00833D7D /* PrimitiveScene.swift in Sources */,
 				1E3C59861BEB1F6F00833D7D /* GameViewController.swift in Sources */,
+				1E770DED1BEC74010024C184 /* README.md in Sources */,
 				1E3C59821BEB1F6F00833D7D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,6 +307,7 @@
 				1E3C59941BEB1F6F00833D7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,5 +1,5 @@
-# SceneKit Skybox
+# SpriteKit Draw Sprite
 
-Example skybox with reflective torus.
+Basic scene, creating and adding a sprite node.
 
-![capture](http://labs.jasonsturges.com/swift/labs/skybox.gif)
+![capture](http://labs.jasonsturges.com/swift/labs/spritekit-draw-sprite.png)

@@ -14,6 +14,7 @@
 		1E6AEC481BE711510065E651 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E6AEC461BE711510065E651 /* Main.storyboard */; };
 		1E6AEC4A1BE711510065E651 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E6AEC491BE711510065E651 /* Assets.xcassets */; };
 		1E6AEC4D1BE711510065E651 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E6AEC4B1BE711510065E651 /* LaunchScreen.storyboard */; };
+		1E938D211BF1BC6C007A8858 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 1E938D201BF1BC6C007A8858 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		1E6AEC491BE711510065E651 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E6AEC4C1BE711510065E651 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E6AEC4E1BE711510065E651 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E938D201BF1BC6C007A8858 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 		1E6AEC321BE711500065E651 = {
 			isa = PBXGroup;
 			children = (
+				1E938D201BF1BC6C007A8858 /* README.md */,
 				1E6AEC3D1BE711500065E651 /* SpriteKitDrawSprite */,
 				1E6AEC3C1BE711500065E651 /* Products */,
 			);
@@ -145,6 +148,7 @@
 			files = (
 				1E6AEC431BE711510065E651 /* GameScene.swift in Sources */,
 				1E6AEC451BE711510065E651 /* GameViewController.swift in Sources */,
+				1E938D211BF1BC6C007A8858 /* README.md in Sources */,
 				1E6AEC3F1BE711510065E651 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,6 +299,7 @@
 				1E6AEC531BE711510065E651 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

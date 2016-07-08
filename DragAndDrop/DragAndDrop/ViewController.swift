@@ -9,6 +9,8 @@
 import Cocoa
 
 class ViewController: NSViewController {
+    
+    @IBOutlet weak var imageView: DropImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()

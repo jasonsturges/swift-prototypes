@@ -11,6 +11,9 @@
       location = "group:CollectionViewUsingNIB/CollectionViewUsingNIB.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:DragAndDrop/DragAndDrop.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:JSONUsingSwiftyJSON/JSONUsingSwiftyJSON.xcodeproj">
    </FileRef>
    <FileRef

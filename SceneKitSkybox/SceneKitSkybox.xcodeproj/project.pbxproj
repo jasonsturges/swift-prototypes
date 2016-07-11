@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1E770DEF1BEC741B0024C184 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 1E770DEE1BEC741B0024C184 /* README.md */; };
 		1E9E7D631BEB31BC00666E1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9E7D621BEB31BC00666E1A /* AppDelegate.swift */; };
 		1E9E7D651BEB31BC00666E1A /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E9E7D641BEB31BC00666E1A /* art.scnassets */; };
 		1E9E7D671BEB31BC00666E1A /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9E7D661BEB31BC00666E1A /* GameViewController.swift */; };
@@ -160,7 +159,6 @@
 			files = (
 				1E9E7D671BEB31BC00666E1A /* GameViewController.swift in Sources */,
 				1E9E7D7A1BEB321200666E1A /* SkyboxScene.swift in Sources */,
-				1E770DEF1BEC741B0024C184 /* README.md in Sources */,
 				1E9E7D631BEB31BC00666E1A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

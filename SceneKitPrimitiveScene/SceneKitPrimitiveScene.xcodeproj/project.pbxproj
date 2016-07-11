@@ -14,7 +14,6 @@
 		1E3C598E1BEB1F6F00833D7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E3C598C1BEB1F6F00833D7D /* LaunchScreen.storyboard */; };
 		1E3C59961BEB1FBA00833D7D /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E3C59951BEB1FBA00833D7D /* SceneKit.framework */; };
 		1E3C59981BEB202C00833D7D /* PrimitiveScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3C59971BEB202C00833D7D /* PrimitiveScene.swift */; };
-		1E770DED1BEC74010024C184 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 1E770DEC1BEC74010024C184 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -156,7 +155,6 @@
 			files = (
 				1E3C59981BEB202C00833D7D /* PrimitiveScene.swift in Sources */,
 				1E3C59861BEB1F6F00833D7D /* GameViewController.swift in Sources */,
-				1E770DED1BEC74010024C184 /* README.md in Sources */,
 				1E3C59821BEB1F6F00833D7D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

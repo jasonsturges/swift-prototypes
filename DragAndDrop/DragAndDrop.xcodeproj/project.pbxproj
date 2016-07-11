@@ -12,7 +12,6 @@
 		81818AAE1D300FC9004A882B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81818AAD1D300FC9004A882B /* Assets.xcassets */; };
 		81818AB11D300FC9004A882B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81818AAF1D300FC9004A882B /* Main.storyboard */; };
 		81818AB91D3010AF004A882B /* DropImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81818AB81D3010AF004A882B /* DropImageView.swift */; };
-		81818AD61D3015AC004A882B /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 81818AD51D3015AC004A882B /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -139,7 +138,6 @@
 			files = (
 				81818AB91D3010AF004A882B /* DropImageView.swift in Sources */,
 				81818AAC1D300FC9004A882B /* ViewController.swift in Sources */,
-				81818AD61D3015AC004A882B /* README.md in Sources */,
 				81818AAA1D300FC9004A882B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +281,7 @@
 				81818AB71D300FC9004A882B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

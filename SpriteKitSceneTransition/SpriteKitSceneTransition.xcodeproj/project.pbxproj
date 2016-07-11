@@ -16,7 +16,6 @@
 		1E1542581BE9E0C2006B9F64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E1542561BE9E0C2006B9F64 /* LaunchScreen.storyboard */; };
 		1E1542601BE9E32F006B9F64 /* GameScene2.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1E15425F1BE9E32F006B9F64 /* GameScene2.sks */; };
 		1E1542621BE9E34C006B9F64 /* GameScene2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1542611BE9E34C006B9F64 /* GameScene2.swift */; };
-		1E770DF11BEC74740024C184 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 1E770DF01BEC74740024C184 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -155,7 +154,6 @@
 			files = (
 				1E15424E1BE9E0C2006B9F64 /* GameScene.swift in Sources */,
 				1E1542621BE9E34C006B9F64 /* GameScene2.swift in Sources */,
-				1E770DF11BEC74740024C184 /* README.md in Sources */,
 				1E1542501BE9E0C2006B9F64 /* GameViewController.swift in Sources */,
 				1E15424A1BE9E0C2006B9F64 /* AppDelegate.swift in Sources */,
 			);

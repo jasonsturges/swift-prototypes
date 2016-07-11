@@ -116,7 +116,6 @@
 				TargetAttributes = {
 					1E9E7D5E1BEB31BC00666E1A = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = W5U58WCN7R;
 					};
 				};
 			};
@@ -272,6 +271,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SceneKitSkybox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jasonsturges.labs.SceneKitSkybox;
@@ -283,6 +283,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SceneKitSkybox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jasonsturges.labs.SceneKitSkybox;

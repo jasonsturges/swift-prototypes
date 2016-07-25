@@ -5,7 +5,7 @@ To install the `carthage` tool on your system, download and run the `Carthage.pk
 
 ### Create a Cartfile
 
-Create a [Cartfile][] that lists the frameworks you’d like to use in your project.
+In this project, a Cartfile has already been created for you.
 
     # SWXMLHash
     github "drmohundro/SWXMLHash" ~> 2.0
@@ -13,25 +13,23 @@ Create a [Cartfile][] that lists the frameworks you’d like to use in your proj
 
 ### Carthage update
 
-Run `carthage update`. This will fetch dependencies into a [Carthage/Checkouts][] folder and build each one.
+Run `carthage update`. This will fetch dependencies into a Carthage/Checkouts folder and build each one.
 
 
 ### If you're building for OS X
 
-On your application targets’ “General” settings tab, in the “Embedded Binaries” section, drag and drop each framework you want to use from the [Carthage/Build][] folder on disk.
+On your application targets’ “General” settings tab, in the “Embedded Binaries” section, drag and drop each framework you want to use from the Carthage/Build folder on disk.
 
 ### If you're building for iOS
 
-1. On your application targets’ “General” settings tab, in the “Linked Frameworks and Libraries” section, drag and drop each framework you want to use from the [Carthage/Build][] folder on disk.
+1. On your application targets’ “General” settings tab, in the “Linked Frameworks and Libraries” section, drag and drop each framework you want to use from the Carthage/Build folder on disk.
 1. On your application targets’ “Build Phases” settings tab, click the “+” icon and choose “New Run Script Phase”. Create a Run Script with the following contents:
 
-        sh
-        /usr/local/bin/carthage copy-frameworks
+    sh
+    /usr/local/bin/carthage copy-frameworks
 
 and add the paths to the frameworks you want to use under “Input Files”, e.g.:
 
-
     $(SRCROOT)/Carthage/Build/iOS/SWXMLHash.framework
-
 
 This script works around an [App Store submission bug](http://www.openradar.me/radar?id=6409498411401216) triggered by universal binaries and ensures that necessary bitcode-related files are copied when archiving.

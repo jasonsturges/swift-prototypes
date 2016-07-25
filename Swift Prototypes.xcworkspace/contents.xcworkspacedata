@@ -17,6 +17,9 @@
       location = "group:JSONUsingSwiftyJSON/JSONUsingSwiftyJSON.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:MarkdownView/MarkdownView.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:SceneKitPrimitiveScene/SceneKitPrimitiveScene.xcodeproj">
    </FileRef>
    <FileRef

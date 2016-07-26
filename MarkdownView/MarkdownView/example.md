@@ -30,7 +30,9 @@ Paragraphs must be separated by a blank line. Basic formatting of *italics* and 
 
 ### Code block
 
-Code blocks are very useful for developers and other people who look at code or other things that are written in plain text. As you can see, it uses a fixed-width font.
+Code blocks are very useful for developers and other people who look at code or other things that are written in plain text. 
+
+    As you can see, it uses a fixed-width font.
 
 You can also make `inline code` to add code into other things.
 

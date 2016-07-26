@@ -10,9 +10,23 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var webView: UIWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+
+        do {
+            let path = NSBundle.mainBundle().pathForResource("example", ofType: "md")
+            let text = try String(contentsOfFile: path!, encoding: NSUTF8StringEncoding)
+            
+            var markdown = Markdown();
+            let html:String = markdown.transform(text);
+            
+            webView.loadHTMLString(html, baseURL: nil)
+        } catch let error  {
+            print (error)
+        }
     }
 
     override func didReceiveMemoryWarning() {

@@ -1,5 +1,6 @@
-# SwiftLabs
-Swift programming experimental prototypes
+# Swift Prototypes
+
+These are Swift programming experimental prototypes, created to isolate example functionality.   
 
 ## iOS
 

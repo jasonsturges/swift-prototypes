@@ -29,6 +29,9 @@
       location = "group:SceneKitSkybox/SceneKitSkybox.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:ScrollView/ScrollView.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:SpriteKitAnimateSprite/SpriteKitAnimateSprite.xcodeproj">
    </FileRef>
    <FileRef

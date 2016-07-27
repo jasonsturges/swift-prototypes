@@ -28,6 +28,7 @@
 		817476C51D4874980049726D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		817476C71D4874980049726D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		817476CD1D4877D10049726D /* StarNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarNode.swift; sourceTree = "<group>"; };
+		817476CF1D4880C30049726D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +45,7 @@
 		817476AB1D4874980049726D = {
 			isa = PBXGroup;
 			children = (
+				817476CF1D4880C30049726D /* README.md */,
 				817476B61D4874980049726D /* SpriteKitPhysics */,
 				817476B51D4874980049726D /* Products */,
 			);

@@ -14,6 +14,7 @@
 		817476C11D4874980049726D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 817476BF1D4874980049726D /* Main.storyboard */; };
 		817476C31D4874980049726D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 817476C21D4874980049726D /* Assets.xcassets */; };
 		817476C61D4874980049726D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 817476C41D4874980049726D /* LaunchScreen.storyboard */; };
+		817476CE1D4877D10049726D /* StarNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817476CD1D4877D10049726D /* StarNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		817476C21D4874980049726D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		817476C51D4874980049726D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		817476C71D4874980049726D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		817476CD1D4877D10049726D /* StarNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				817476C21D4874980049726D /* Assets.xcassets */,
 				817476C41D4874980049726D /* LaunchScreen.storyboard */,
 				817476C71D4874980049726D /* Info.plist */,
+				817476CD1D4877D10049726D /* StarNode.swift */,
 			);
 			path = SpriteKitPhysics;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				817476BC1D4874980049726D /* GameScene.swift in Sources */,
+				817476CE1D4877D10049726D /* StarNode.swift in Sources */,
 				817476BE1D4874980049726D /* GameViewController.swift in Sources */,
 				817476B81D4874980049726D /* AppDelegate.swift in Sources */,
 			);
@@ -296,6 +300,7 @@
 				817476CC1D4874980049726D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

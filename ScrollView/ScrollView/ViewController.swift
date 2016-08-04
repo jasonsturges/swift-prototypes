@@ -35,6 +35,10 @@ class ViewController: UIViewController, UIScrollViewDelegate  {
         return imageView
     }
     
+    override func viewWillAppear(animated: Bool) {
+        setZoomScale(view.bounds.size)
+    }
+    
     private func setZoomScale(size: CGSize) {
         let widthScale = size.width / imageView.bounds.width
         let heightScale = size.height / imageView.bounds.height

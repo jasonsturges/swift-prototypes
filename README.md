@@ -6,19 +6,19 @@ These are Swift programming experimental prototypes, created to isolate example 
 
 General
 
-- [Markdown](MarkdownView/README.md)
-- [ScrollView](ScrollView/README.md)
+- [Markdown](MarkdownView)
+- [ScrollView](ScrollView)
 
 SceneKit
-- [SceneKit Primitive Scene](SceneKitPrimitiveScene/README.md)
-- [SceneKit Skybox](SceneKitSkybox/README.md)
+- [SceneKit Primitive Scene](SceneKitPrimitiveScene)
+- [SceneKit Skybox](SceneKitSkybox)
 
 SpriteKit
-- [SpriteKit Animate Sprite](SpriteKitAnimateSprite/README.md)
-- [SpriteKit Draw Sprite](SpriteKitDrawSprite/README.md)
-- [SpriteKit Noise](SpriteKitNoise/README.md)
-- [SpriteKit Physics](SpriteKitPhysics/README.md)
-- [SpriteKit Scene Transition](SpriteKitSceneTransition/README.md)
+- [SpriteKit Animate Sprite](SpriteKitAnimateSprite)
+- [SpriteKit Draw Sprite](SpriteKitDrawSprite)
+- [SpriteKit Noise](SpriteKitNoise)
+- [SpriteKit Physics](SpriteKitPhysics)
+- [SpriteKit Scene Transition](SpriteKitSceneTransition)
 
 ## MacOS
 

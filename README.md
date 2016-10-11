@@ -22,4 +22,4 @@ SpriteKit
 
 ## MacOS
 
-- [Drag and Drop](DragAndDrop/README.md)
+- [Drag and Drop](DragAndDrop)

@@ -14,11 +14,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let path = NSBundle.mainBundle().pathForResource("data", ofType: "xml")
-        let data = NSData(contentsOfFile: path!)
+        let path = Bundle.main.path(forResource: "data", ofType: "xml")
+        let data = try? Data(contentsOf: URL(fileURLWithPath: path!))
         let xml = SWXMLHash.parse(data!)
         
-        print(xml["root"]["catalog"]["book"][1].element?.attributes["id"])
+        print(xml["root"]["catalog"]["book"][1].element?.allAttributes["id"]! ?? "[none]")
         
         for elem in xml["root"]["catalog"]["book"] {
             print(elem["genre"].element!.text!)
@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         
         do {
             try print(xml["root"]["catalog"]["book"].withAttr("id", "123")["author"].element!.text!)
-        } catch let error as XMLIndexer.Error {
+        } catch let error as IndexingError {
             // error is an XMLIndexer.Error instance that you can deal with
             print("An XMLIndexer.Error occurred: \(error.description)")
         } catch {

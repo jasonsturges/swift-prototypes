@@ -1,6 +1,6 @@
 ## Summary
 
-Mustache templates for Swift using ![GRMustache.swift](https://github.com/groue/GRMustache.swift)
+Mustache templates for Swift using [GRMustache.swift](https://github.com/groue/GRMustache.swift)
 
 This project shows the example usage of rendering a mustache file:
 

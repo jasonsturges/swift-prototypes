@@ -17,8 +17,8 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
 
         do {
-            let path = NSBundle.mainBundle().pathForResource("example", ofType: "md")
-            let text = try String(contentsOfFile: path!, encoding: NSUTF8StringEncoding)
+            let path = Bundle.main.path(forResource: "example", ofType: "md")
+            let text = try String(contentsOfFile: path!, encoding: String.Encoding.utf8)
             
             var markdown = Markdown();
             let html:String = markdown.transform(text);

@@ -10,8 +10,8 @@ import Cocoa
 
 class DropImageView: NSImageView {
     
-    override func drawRect(dirtyRect: NSRect) {
-        super.drawRect(dirtyRect)
+    override func draw(_ dirtyRect: NSRect) {
+        super.draw(dirtyRect)
         
         // Drawing code here.
     }
@@ -19,7 +19,7 @@ class DropImageView: NSImageView {
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         // Declare and register an array of accepted types
-        registerForDraggedTypes([NSFilenamesPboardType, NSURLPboardType, NSPasteboardTypeTIFF])
+        register(forDraggedTypes: [NSFilenamesPboardType, NSURLPboardType, NSPasteboardTypeTIFF])
     }
     
     
@@ -27,27 +27,27 @@ class DropImageView: NSImageView {
     var fileTypeIsOk = false
     var droppedFilePath: String?
     
-    override func draggingEntered(sender: NSDraggingInfo) -> NSDragOperation {
+    override func draggingEntered(_ sender: NSDraggingInfo) -> NSDragOperation {
         if checkExtension(sender) {
             fileTypeIsOk = true
-            return .Copy
+            return .copy
         } else {
             fileTypeIsOk = false
-            return .None
+            return NSDragOperation()
         }
     }
     
-    override func draggingUpdated(sender: NSDraggingInfo) -> NSDragOperation {
+    override func draggingUpdated(_ sender: NSDraggingInfo) -> NSDragOperation {
         if fileTypeIsOk {
-            return .Copy
+            return .copy
         } else {
-            return .None
+            return NSDragOperation()
         }
     }
     
-    override func performDragOperation(sender: NSDraggingInfo) -> Bool {
-        if let board = sender.draggingPasteboard().propertyListForType("NSFilenamesPboardType") as? NSArray,
-            imagePath = board[0] as? String {
+    override func performDragOperation(_ sender: NSDraggingInfo) -> Bool {
+        if let board = sender.draggingPasteboard().propertyList(forType: "NSFilenamesPboardType") as? NSArray,
+            let imagePath = board[0] as? String {
             // THIS IS WERE YOU GET THE PATH FOR THE DROPPED FILE
             droppedFilePath = imagePath
             return true
@@ -55,13 +55,13 @@ class DropImageView: NSImageView {
         return false
     }
     
-    func checkExtension(drag: NSDraggingInfo) -> Bool {
-        if let board = drag.draggingPasteboard().propertyListForType("NSFilenamesPboardType") as? NSArray,
-            path = board[0] as? String {
-            let url = NSURL(fileURLWithPath: path)
-            if let fileExtension = url.pathExtension?.lowercaseString {
-                return fileTypes.contains(fileExtension)
-            }
+    func checkExtension(_ drag: NSDraggingInfo) -> Bool {
+        if let board = drag.draggingPasteboard().propertyList(forType: "NSFilenamesPboardType") as? NSArray,
+            let path = board[0] as? String {
+            let url = URL(fileURLWithPath: path)
+            let fileExtension = url.pathExtension.lowercased()
+            
+            return fileTypes.contains(fileExtension)
         }
         return false
     }

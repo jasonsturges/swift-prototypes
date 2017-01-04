@@ -11,7 +11,26 @@
 		8182EC921E1D7A1F006CF64C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8182EC911E1D7A1F006CF64C /* ViewController.swift */; };
 		8182EC941E1D7A1F006CF64C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8182EC931E1D7A1F006CF64C /* Assets.xcassets */; };
 		8182EC971E1D7A1F006CF64C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8182EC951E1D7A1F006CF64C /* Main.storyboard */; };
+		8182EC9F1E1D7A93006CF64C /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 8182EC9E1E1D7A93006CF64C /* Cartfile */; };
+		8182ECA11E1D7B89006CF64C /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 8182ECA01E1D7B89006CF64C /* README.md */; };
+		8182ECA31E1D7D67006CF64C /* Mustache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8182ECA21E1D7D67006CF64C /* Mustache.framework */; };
+		8182ECA61E1D7DEC006CF64C /* document.mustache in Resources */ = {isa = PBXBuildFile; fileRef = 8182ECA51E1D7DEC006CF64C /* document.mustache */; };
+		8182ECA91E1D8412006CF64C /* Mustache.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8182ECA21E1D7D67006CF64C /* Mustache.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8182ECAA1E1D8412006CF64C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8182ECA91E1D8412006CF64C /* Mustache.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8182EC8C1E1D7A1F006CF64C /* MustacheTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MustacheTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,6 +39,10 @@
 		8182EC931E1D7A1F006CF64C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8182EC961E1D7A1F006CF64C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8182EC981E1D7A1F006CF64C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8182EC9E1E1D7A93006CF64C /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		8182ECA01E1D7B89006CF64C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		8182ECA21E1D7D67006CF64C /* Mustache.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mustache.framework; path = Carthage/Build/Mac/Mustache.framework; sourceTree = "<group>"; };
+		8182ECA51E1D7DEC006CF64C /* document.mustache */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = document.mustache; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8182ECA31E1D7D67006CF64C /* Mustache.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,8 +60,11 @@
 		8182EC831E1D7A1F006CF64C = {
 			isa = PBXGroup;
 			children = (
+				8182ECA01E1D7B89006CF64C /* README.md */,
+				8182EC9E1E1D7A93006CF64C /* Cartfile */,
 				8182EC8E1E1D7A1F006CF64C /* MustacheTemplate */,
 				8182EC8D1E1D7A1F006CF64C /* Products */,
+				8182ECA41E1D7D6B006CF64C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,6 +79,7 @@
 		8182EC8E1E1D7A1F006CF64C /* MustacheTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				8182ECA51E1D7DEC006CF64C /* document.mustache */,
 				8182EC8F1E1D7A1F006CF64C /* AppDelegate.swift */,
 				8182EC911E1D7A1F006CF64C /* ViewController.swift */,
 				8182EC931E1D7A1F006CF64C /* Assets.xcassets */,
@@ -59,6 +87,14 @@
 				8182EC981E1D7A1F006CF64C /* Info.plist */,
 			);
 			path = MustacheTemplate;
+			sourceTree = "<group>";
+		};
+		8182ECA41E1D7D6B006CF64C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8182ECA21E1D7D67006CF64C /* Mustache.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,6 +107,7 @@
 				8182EC881E1D7A1F006CF64C /* Sources */,
 				8182EC891E1D7A1F006CF64C /* Frameworks */,
 				8182EC8A1E1D7A1F006CF64C /* Resources */,
+				8182ECAA1E1D8412006CF64C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -120,6 +157,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8182EC9F1E1D7A93006CF64C /* Cartfile in Resources */,
+				8182ECA61E1D7DEC006CF64C /* document.mustache in Resources */,
 				8182EC941E1D7A1F006CF64C /* Assets.xcassets in Resources */,
 				8182EC971E1D7A1F006CF64C /* Main.storyboard in Resources */,
 			);
@@ -132,6 +171,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8182ECA11E1D7B89006CF64C /* README.md in Sources */,
 				8182EC921E1D7A1F006CF64C /* ViewController.swift in Sources */,
 				8182EC901E1D7A1F006CF64C /* AppDelegate.swift in Sources */,
 			);
@@ -246,6 +286,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = MustacheTemplate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jasonsturges.labs.MustacheTemplate;
@@ -259,6 +303,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = MustacheTemplate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jasonsturges.labs.MustacheTemplate;
@@ -286,6 +334,7 @@
 				8182EC9D1E1D7A1F006CF64C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

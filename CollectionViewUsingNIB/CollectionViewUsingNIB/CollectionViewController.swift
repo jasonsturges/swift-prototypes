@@ -20,18 +20,18 @@ class CollectionViewController: UICollectionViewController {
         
         // Register cell nib
         let nib = UINib(nibName: "CollectionViewCell", bundle: nil)
-        collectionView?.registerNib(nib, forCellWithReuseIdentifier: "cell")
+        collectionView?.register(nib, forCellWithReuseIdentifier: "cell")
     }
     
     
     // MARK: UICollectionViewDataSource
     
-    override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return data.count
     }
     
-    override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! CollectionViewCell
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CollectionViewCell
         
         // Configure the cell
         cell.label.text = data[indexPath.row]

@@ -16,7 +16,7 @@ class PrimitiveScene: SCNScene {
         
         let cubeGeometry = SCNBox(width: 4, height: 4, length: 4, chamferRadius: 0)
         cubeGeometry.firstMaterial?.diffuse.contents = UIColor(red: 0.729, green: 0.722, blue: 0.424, alpha: 1.0)
-        cubeGeometry.firstMaterial?.specular.contents = UIColor.whiteColor()
+        cubeGeometry.firstMaterial?.specular.contents = UIColor.white
         cubeGeometry.firstMaterial?.shininess = 1.0
         
         let cubeNode = SCNNode(geometry: cubeGeometry)

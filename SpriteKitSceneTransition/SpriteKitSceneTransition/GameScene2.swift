@@ -10,25 +10,25 @@ import SpriteKit
 
 class GameScene2: SKScene {
     
-    override func didMoveToView(view: SKView) {
-        let sprite = SKSpriteNode(color: UIColor.grayColor(), size: CGSize(width: 64, height: 64))
+    override func didMove(to view: SKView) {
+        let sprite = SKSpriteNode(color: UIColor.gray, size: CGSize(width: 64, height: 64))
         sprite.name = "Previous Scene"
         sprite.position = CGPoint(x: 512, y: 384)
         
         self.addChild(sprite);
     }
     
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        super.touchesBegan(touches, withEvent: event)
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
         
-        if let location = touches.first?.locationInNode(self) {
-            let touchedNode = nodeAtPoint(location)
+        if let location = touches.first?.location(in: self) {
+            let touchedNode = atPoint(location)
             
             if touchedNode.name == "Previous Scene" {
-                let transition = SKTransition.crossFadeWithDuration(1)
+                let transition = SKTransition.crossFade(withDuration: 1)
                 
                 let nextScene = GameScene(size: scene!.size)
-                nextScene.scaleMode = .AspectFill
+                nextScene.scaleMode = .aspectFill
                 
                 scene?.view?.presentScene(nextScene, transition: transition)
             }

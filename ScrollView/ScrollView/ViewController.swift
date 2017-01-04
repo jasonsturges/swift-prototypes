@@ -31,15 +31,15 @@ class ViewController: UIViewController, UIScrollViewDelegate  {
         // Dispose of any resources that can be recreated.
     }
 
-    func viewForZoomingInScrollView(scrollView:UIScrollView) -> UIView? {
+    func viewForZooming(in scrollView:UIScrollView) -> UIView? {
         return imageView
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         setZoomScale(view.bounds.size)
     }
     
-    private func setZoomScale(size: CGSize) {
+    fileprivate func setZoomScale(_ size: CGSize) {
         let widthScale = size.width / imageView.bounds.width
         let heightScale = size.height / imageView.bounds.height
         let minScale = min(widthScale, heightScale)
@@ -54,7 +54,7 @@ class ViewController: UIViewController, UIScrollViewDelegate  {
         setZoomScale(view.bounds.size)
     }
     
-    private func updateConstraintsForSize(size: CGSize) {
+    fileprivate func updateConstraintsForSize(_ size: CGSize) {
         
         let yOffset = max(0, (size.height - imageView.frame.height) / 2)
         
@@ -68,7 +68,7 @@ class ViewController: UIViewController, UIScrollViewDelegate  {
         view.layoutIfNeeded()
     }
     
-    func scrollViewDidZoom(scrollView: UIScrollView) {
+    func scrollViewDidZoom(_ scrollView: UIScrollView) {
         updateConstraintsForSize(view.bounds.size)
     }
     

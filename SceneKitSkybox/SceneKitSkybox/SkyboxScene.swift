@@ -24,8 +24,8 @@ class SkyboxScene: SCNScene {
         ]
         
         let torusGeometry = SCNTorus(ringRadius: 4, pipeRadius: 1)
-        torusGeometry.firstMaterial?.diffuse.contents = UIColor.blackColor()
-        torusGeometry.firstMaterial?.specular.contents = UIColor.whiteColor()
+        torusGeometry.firstMaterial?.diffuse.contents = UIColor.black
+        torusGeometry.firstMaterial?.specular.contents = UIColor.white
         torusGeometry.firstMaterial?.shininess = 100.0
         torusGeometry.firstMaterial?.reflective.contents = background.contents
         

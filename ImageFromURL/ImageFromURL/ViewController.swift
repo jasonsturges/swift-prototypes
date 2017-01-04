@@ -11,15 +11,15 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var imageView: UIImageView!
-    let imageUrl:NSURL = NSURL(string: "http://labs.jasonsturges.com/swift/assets/checkerboard.png")!
+    let imageUrl:URL = URL(string: "http://labs.jasonsturges.com/swift/assets/checkerboard.png")!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
-            let data = NSData(contentsOfURL: self.imageUrl)
-            dispatch_async(dispatch_get_main_queue(), {
+        DispatchQueue.global(qos: DispatchQoS.QoSClass.userInitiated).async {
+            let data = try? Data(contentsOf: self.imageUrl)
+            DispatchQueue.main.async(execute: {
                 self.imageView.image = UIImage(data: data!)
             })
         }

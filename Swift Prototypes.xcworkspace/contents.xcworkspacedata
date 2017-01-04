@@ -23,6 +23,9 @@
       location = "group:MarkdownView/MarkdownView.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:MustacheTemplate/MustacheTemplate.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:NavigationController/NavigationController.xcodeproj">
    </FileRef>
    <FileRef

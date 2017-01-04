@@ -10,7 +10,7 @@ import UIKit
 import SpriteKit
 
 class StarNode: SKSpriteNode {
-    class func star(location: CGPoint) -> StarNode {
+    class func star(_ location: CGPoint) -> StarNode {
         let sprite = StarNode(imageNamed:"star.png")
         
         sprite.xScale = 0.25
@@ -21,7 +21,7 @@ class StarNode: SKSpriteNode {
         if let physics = sprite.physicsBody {
             physics.affectedByGravity = true
             physics.allowsRotation = true
-            physics.dynamic = true;
+            physics.isDynamic = true;
             physics.linearDamping = 0.75
             physics.angularDamping = 0.75
             physics.restitution = 0.95

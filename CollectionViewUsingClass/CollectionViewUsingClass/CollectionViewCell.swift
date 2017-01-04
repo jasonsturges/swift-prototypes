@@ -14,14 +14,14 @@ class CollectionViewCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        let label = UILabel(frame: CGRectZero)
+        let label = UILabel(frame: CGRect.zero)
         label.translatesAutoresizingMaskIntoConstraints = false;
         contentView.addSubview(label)
         self.label = label
         
-        label.topAnchor.constraintEqualToAnchor(contentView.topAnchor).active = true
-        label.leftAnchor.constraintEqualToAnchor(contentView.leftAnchor).active = true
-        self.backgroundColor = UIColor.lightGrayColor()
+        label.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
+        label.leftAnchor.constraint(equalTo: contentView.leftAnchor).isActive = true
+        self.backgroundColor = UIColor.lightGray
     }
     
     required init?(coder aDecoder: NSCoder) {

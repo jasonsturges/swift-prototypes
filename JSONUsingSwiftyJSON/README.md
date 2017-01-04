@@ -14,6 +14,10 @@ In this project, a Cartfile has already been created for you.
 
 Run `carthage update`. This will fetch dependencies into a Carthage/Checkouts folder and build each one.
 
+From Xcode, if you receive an error stating: "*Module compiled with Swift 3.0 cannot be imported in Swift 3.0.2*", compile the package locally instead of downloading the precompiled binary by using the command:
+
+    carthage update --platform iOS --no-use-binaries
+
 
 ### If you're building for OS X
 

@@ -14,8 +14,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let path = NSBundle.mainBundle().pathForResource("data", ofType: "json")
-        let data = NSData(contentsOfFile: path!)
+        let path = Bundle.main.path(forResource: "data", ofType: "json")
+        let data = try? Data(contentsOf: URL(fileURLWithPath: path!))
         let json = JSON(data: data!)
         
         print("Type: \(json["type"])")

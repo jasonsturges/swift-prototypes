@@ -11,6 +11,9 @@
       location = "group:CollectionViewUsingNIB/CollectionViewUsingNIB.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:CoreGraphics2dDrawing/CoreGraphics2dDrawing.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:DragAndDrop/DragAndDrop.xcodeproj">
    </FileRef>
    <FileRef

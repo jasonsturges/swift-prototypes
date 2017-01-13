@@ -41,6 +41,9 @@
       location = "group:ScrollView/ScrollView.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:SpriteKit2dDrawing/SpriteKit2dDrawing.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:SpriteKitAnimateSprite/SpriteKitAnimateSprite.xcodeproj">
    </FileRef>
    <FileRef

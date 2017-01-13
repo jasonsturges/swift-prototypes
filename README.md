@@ -16,7 +16,7 @@ Not intended as an exhaustive repository of examples, these are added as needed 
   - [CollectionView using NIB](CollectionViewUsingNIB) — Using a XIB to graphically create the Collection View Cell item
 - [Drag and Drop](DragAndDrop) — Drop an image into a macOS app to load an image
 - [Image from URL](ImageFromURL) — Asynchronous load of an image from the web
-- [JSON using SwiftyJSON](JSONUsingSwiftyJSON) — Prase JSON data using [SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON)
+- [JSON using SwiftyJSON](JSONUsingSwiftyJSON) — Parse JSON data using [SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON)
 - [Markdown](MarkdownView) — Rendering a markdown file to a UIWebView using [Markingbird by Kristopher Johnson](https://github.com/kristopherjohnson/Markingbird)
 - [Mustache Template](MustacheTemplate) — Rendering mustache templates using [GRMustache.swift](https://github.com/groue/GRMustache.swift)
 - [Navigation Controller](NavigationController) — Simple view stack using Navigation Controller

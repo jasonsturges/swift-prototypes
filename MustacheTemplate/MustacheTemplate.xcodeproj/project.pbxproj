@@ -3,19 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1EE2F3F9257D92A1003F2DDD /* Mustache in Frameworks */ = {isa = PBXBuildFile; productRef = 1EE2F3F8257D92A1003F2DDD /* Mustache */; };
 		8182EC901E1D7A1F006CF64C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8182EC8F1E1D7A1F006CF64C /* AppDelegate.swift */; };
 		8182EC921E1D7A1F006CF64C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8182EC911E1D7A1F006CF64C /* ViewController.swift */; };
 		8182EC941E1D7A1F006CF64C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8182EC931E1D7A1F006CF64C /* Assets.xcassets */; };
 		8182EC971E1D7A1F006CF64C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8182EC951E1D7A1F006CF64C /* Main.storyboard */; };
-		8182EC9F1E1D7A93006CF64C /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 8182EC9E1E1D7A93006CF64C /* Cartfile */; };
 		8182ECA11E1D7B89006CF64C /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 8182ECA01E1D7B89006CF64C /* README.md */; };
-		8182ECA31E1D7D67006CF64C /* Mustache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8182ECA21E1D7D67006CF64C /* Mustache.framework */; };
 		8182ECA61E1D7DEC006CF64C /* document.mustache in Resources */ = {isa = PBXBuildFile; fileRef = 8182ECA51E1D7DEC006CF64C /* document.mustache */; };
-		8182ECA91E1D8412006CF64C /* Mustache.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8182ECA21E1D7D67006CF64C /* Mustache.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,7 +23,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				8182ECA91E1D8412006CF64C /* Mustache.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -39,7 +36,6 @@
 		8182EC931E1D7A1F006CF64C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8182EC961E1D7A1F006CF64C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8182EC981E1D7A1F006CF64C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8182EC9E1E1D7A93006CF64C /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		8182ECA01E1D7B89006CF64C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8182ECA21E1D7D67006CF64C /* Mustache.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mustache.framework; path = Carthage/Build/Mac/Mustache.framework; sourceTree = "<group>"; };
 		8182ECA51E1D7DEC006CF64C /* document.mustache */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = document.mustache; sourceTree = "<group>"; };
@@ -50,7 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8182ECA31E1D7D67006CF64C /* Mustache.framework in Frameworks */,
+				1EE2F3F9257D92A1003F2DDD /* Mustache in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,7 +57,6 @@
 			isa = PBXGroup;
 			children = (
 				8182ECA01E1D7B89006CF64C /* README.md */,
-				8182EC9E1E1D7A93006CF64C /* Cartfile */,
 				8182EC8E1E1D7A1F006CF64C /* MustacheTemplate */,
 				8182EC8D1E1D7A1F006CF64C /* Products */,
 				8182ECA41E1D7D6B006CF64C /* Frameworks */,
@@ -114,6 +109,9 @@
 			dependencies = (
 			);
 			name = MustacheTemplate;
+			packageProductDependencies = (
+				1EE2F3F8257D92A1003F2DDD /* Mustache */,
+			);
 			productName = MustacheTemplate;
 			productReference = 8182EC8C1E1D7A1F006CF64C /* MustacheTemplate.app */;
 			productType = "com.apple.product-type.application";
@@ -125,8 +123,8 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
-				ORGANIZATIONNAME = "Jason Sturges";
+				LastUpgradeCheck = 1220;
+				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					8182EC8B1E1D7A1F006CF64C = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -136,13 +134,16 @@
 			};
 			buildConfigurationList = 8182EC871E1D7A1F006CF64C /* Build configuration list for PBXProject "MustacheTemplate" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
 			mainGroup = 8182EC831E1D7A1F006CF64C;
+			packageReferences = (
+				1EE2F3F5257D9263003F2DDD /* XCRemoteSwiftPackageReference "GRMustache" */,
+			);
 			productRefGroup = 8182EC8D1E1D7A1F006CF64C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -157,7 +158,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8182EC9F1E1D7A93006CF64C /* Cartfile in Resources */,
 				8182ECA61E1D7DEC006CF64C /* document.mustache in Resources */,
 				8182EC941E1D7A1F006CF64C /* Assets.xcassets in Resources */,
 				8182EC971E1D7A1F006CF64C /* Main.storyboard in Resources */,
@@ -200,15 +200,24 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -231,7 +240,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -249,15 +258,24 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -274,10 +292,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;
 		};
@@ -285,16 +304,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				INFOPLIST_FILE = MustacheTemplate/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jasonsturges.labs.MustacheTemplate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -302,16 +325,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				INFOPLIST_FILE = MustacheTemplate/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jasonsturges.labs.MustacheTemplate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -337,6 +364,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1EE2F3F5257D9263003F2DDD /* XCRemoteSwiftPackageReference "GRMustache" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/groue/GRMustache.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1EE2F3F8257D92A1003F2DDD /* Mustache */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1EE2F3F5257D9263003F2DDD /* XCRemoteSwiftPackageReference "GRMustache" */;
+			productName = Mustache;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8182EC841E1D7A1F006CF64C /* Project object */;
 }

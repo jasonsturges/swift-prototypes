@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         
         let path = Bundle.main.path(forResource: "data", ofType: "json")
         let data = try? Data(contentsOf: URL(fileURLWithPath: path!))
-        let json = JSON(data: data!)
+        let json = try! JSON(data: data!)
         
         print("Type: \(json["type"])")
         print("Name: \(json["properties"]["name"])")

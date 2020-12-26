@@ -18,14 +18,14 @@ class ViewController: UIViewController {
         let data = try? Data(contentsOf: URL(fileURLWithPath: path!))
         let xml = SWXMLHash.parse(data!)
         
-        print(xml["root"]["catalog"]["book"][1].element?.allAttributes["id"]! ?? "[none]")
+        print(xml["root"]["catalog"]["book"][1]["author"].element!.text)
         
-        for elem in xml["root"]["catalog"]["book"] {
-            print(elem["genre"].element!.text!)
+        for elem in xml["root"]["catalog"]["book"].all {
+            print(elem["genre"].element!.text)
         }
         
         do {
-            try print(xml["root"]["catalog"]["book"].withAttr("id", "123")["author"].element!.text!)
+            try print(xml["root"]["catalog"]["book"].withAttribute("id", "123")["author"].element!.text)
         } catch let error as IndexingError {
             // error is an XMLIndexer.Error instance that you can deal with
             print("An XMLIndexer.Error occurred: \(error.description)")

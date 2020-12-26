@@ -3,16 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1EF22B282597CA63001B9305 /* SWXMLHash in Frameworks */ = {isa = PBXBuildFile; productRef = 1EF22B272597CA63001B9305 /* SWXMLHash */; };
 		817BD25D1BE3C6B600ECB8E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817BD25C1BE3C6B600ECB8E2 /* AppDelegate.swift */; };
 		817BD25F1BE3C6B600ECB8E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817BD25E1BE3C6B600ECB8E2 /* ViewController.swift */; };
 		817BD2621BE3C6B600ECB8E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 817BD2601BE3C6B600ECB8E2 /* Main.storyboard */; };
 		817BD2641BE3C6B600ECB8E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 817BD2631BE3C6B600ECB8E2 /* Assets.xcassets */; };
 		817BD2671BE3C6B600ECB8E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 817BD2651BE3C6B600ECB8E2 /* LaunchScreen.storyboard */; };
-		817BD2701BE3C79B00ECB8E2 /* SWXMLHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 817BD26F1BE3C79B00ECB8E2 /* SWXMLHash.framework */; };
 		817BD2731BE3C88800ECB8E2 /* data.xml in Resources */ = {isa = PBXBuildFile; fileRef = 817BD2721BE3C88800ECB8E2 /* data.xml */; };
 /* End PBXBuildFile section */
 
@@ -24,7 +24,6 @@
 		817BD2631BE3C6B600ECB8E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		817BD2661BE3C6B600ECB8E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		817BD2681BE3C6B600ECB8E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		817BD26E1BE3C72600ECB8E2 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		817BD26F1BE3C79B00ECB8E2 /* SWXMLHash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SWXMLHash.framework; path = Carthage/Build/iOS/SWXMLHash.framework; sourceTree = "<group>"; };
 		817BD2721BE3C88800ECB8E2 /* data.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = data.xml; sourceTree = "<group>"; };
 		817BD2741BE3D12F00ECB8E2 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -35,7 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				817BD2701BE3C79B00ECB8E2 /* SWXMLHash.framework in Frameworks */,
+				1EF22B282597CA63001B9305 /* SWXMLHash in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,7 +45,6 @@
 			isa = PBXGroup;
 			children = (
 				817BD2741BE3D12F00ECB8E2 /* README.md */,
-				817BD26E1BE3C72600ECB8E2 /* Cartfile */,
 				817BD25B1BE3C6B600ECB8E2 /* XMLUsingSWXMLHash */,
 				817BD2751BE3D1AC00ECB8E2 /* Frameworks */,
 				817BD25A1BE3C6B600ECB8E2 /* Products */,
@@ -93,13 +91,15 @@
 				817BD2551BE3C6B600ECB8E2 /* Sources */,
 				817BD2561BE3C6B600ECB8E2 /* Frameworks */,
 				817BD2571BE3C6B600ECB8E2 /* Resources */,
-				817BD2711BE3C7A800ECB8E2 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = XMLUsingSWXMLHash;
+			packageProductDependencies = (
+				1EF22B272597CA63001B9305 /* SWXMLHash */,
+			);
 			productName = XMLUsingSWXMLHash;
 			productReference = 817BD2591BE3C6B600ECB8E2 /* XMLUsingSWXMLHash.app */;
 			productType = "com.apple.product-type.application";
@@ -121,7 +121,7 @@
 				};
 			};
 			buildConfigurationList = 817BD2541BE3C6B600ECB8E2 /* Build configuration list for PBXProject "XMLUsingSWXMLHash" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -129,6 +129,9 @@
 				Base,
 			);
 			mainGroup = 817BD2501BE3C6B600ECB8E2;
+			packageReferences = (
+				1EF22B262597CA63001B9305 /* XCRemoteSwiftPackageReference "SWXMLHash" */,
+			);
 			productRefGroup = 817BD25A1BE3C6B600ECB8E2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -151,23 +154,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		817BD2711BE3C7A800ECB8E2 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/SWXMLHash.framework",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		817BD2551BE3C6B600ECB8E2 /* Sources */ = {
@@ -318,10 +304,13 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = XMLUsingSWXMLHash/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jasonsturges.labs.XMLUsingSWXMLHash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -334,10 +323,13 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = XMLUsingSWXMLHash/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jasonsturges.labs.XMLUsingSWXMLHash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -363,6 +355,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1EF22B262597CA63001B9305 /* XCRemoteSwiftPackageReference "SWXMLHash" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/drmohundro/SWXMLHash.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1EF22B272597CA63001B9305 /* SWXMLHash */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1EF22B262597CA63001B9305 /* XCRemoteSwiftPackageReference "SWXMLHash" */;
+			productName = SWXMLHash;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 817BD2511BE3C6B600ECB8E2 /* Project object */;
 }

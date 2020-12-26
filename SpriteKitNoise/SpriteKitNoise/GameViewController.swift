@@ -11,23 +11,50 @@ import SpriteKit
 
 class GameViewController: UIViewController {
     
+    var scene: GameScene!
+    var smoothness: CGFloat = 1.1
+    var vector: Bool = false
+    var grayscale: Bool = false
+    
+    @IBOutlet weak var smoothnessLabel: UILabel!
+    @IBOutlet weak var grayscaleSwitch: UISwitch!
+    
+    @IBAction func smoothnessAction(_ sender: UISlider) {
+        smoothnessLabel.text = String(format: "%.3f", sender.value)
+        smoothness = CGFloat(sender.value)
+        updateTexture()
+    }
+    
+    @IBAction func vectorAction(_ sender: UISwitch) {
+        vector = sender.isOn
+        grayscaleSwitch.isEnabled = !sender.isOn
+        updateTexture()
+    }
+    
+    @IBAction func grayscaleAction(_ sender: UISwitch) {
+        grayscale = sender.isOn
+        updateTexture()
+    }
+    
+    func updateTexture() {
+        scene.changeNoise(smoothness: smoothness, isVector: vector, isGrayscale: grayscale)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        if let scene = GameScene(fileNamed:"GameScene") {
-            // Configure the view.
-            let skView = self.view as! SKView
-            skView.showsFPS = true
-            skView.showsNodeCount = true
-            
-            /* Sprite Kit applies additional optimizations to improve rendering performance */
-            skView.ignoresSiblingOrder = true
-            
-            /* Set the scale mode to scale to fit the window */
-            scene.scaleMode = .aspectFill
-            
-            skView.presentScene(scene)
-        }
+        scene = GameScene(fileNamed:"GameScene")
+
+        // Configure the view.
+        let skView = self.view as! SKView
+        skView.showsFPS = true
+        skView.showsNodeCount = true
+        skView.ignoresSiblingOrder = true
+        
+        /* Set the scale mode to scale to fit the window */
+        scene.scaleMode = .aspectFill
+        
+        skView.presentScene(scene)
     }
 
     override var shouldAutorotate : Bool {
